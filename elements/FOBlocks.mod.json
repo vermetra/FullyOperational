@@ -4,7 +4,7 @@
   "definition": {
     "name": "FO: Plushies",
     "icon": {
-      "value": "Blocks.DRIPSTONE_BLOCK"
+      "value": "CUSTOM:VermetraPlush"
     },
     "showSearch": false
   }
