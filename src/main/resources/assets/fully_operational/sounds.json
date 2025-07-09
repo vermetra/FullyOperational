@@ -1,0 +1,11 @@
+{
+  "fullyoperational.plushhonk": {
+    "subtitle": "subtitles.fullyoperational.plushhonk",
+    "sounds": [
+      {
+        "name": "fully_operational:jellys.plushhonk",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -3,6 +3,12 @@ package net.skullix.fullyoperational;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.skullix.fullyoperational.init.FullyOperationalModTabs;
+import net.skullix.fullyoperational.init.FullyOperationalModSounds;
+import net.skullix.fullyoperational.init.FullyOperationalModItems;
+import net.skullix.fullyoperational.init.FullyOperationalModBlocks;
+import net.skullix.fullyoperational.init.FullyOperationalModBlockEntities;
+
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
@@ -36,6 +42,12 @@ public class FullyOperationalMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		FullyOperationalModSounds.REGISTRY.register(bus);
+		FullyOperationalModBlocks.REGISTRY.register(bus);
+		FullyOperationalModBlockEntities.REGISTRY.register(bus);
+		FullyOperationalModItems.REGISTRY.register(bus);
+
+		FullyOperationalModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

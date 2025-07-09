@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "tab",
+  "definition": {
+    "name": "FO: Plushies",
+    "icon": {
+      "value": "Blocks.DRIPSTONE_BLOCK"
+    },
+    "showSearch": false
+  }
+}

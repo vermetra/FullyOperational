@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fully_operational:custom/vermetra_plush_particle"
+    },
+    "facing=east": {
+      "model": "fully_operational:custom/vermetra_plush_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fully_operational:custom/vermetra_plush_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fully_operational:custom/vermetra_plush_particle",
+      "y": 270
+    }
+  }
+}

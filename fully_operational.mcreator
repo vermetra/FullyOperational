@@ -1,11 +1,109 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "PlushHonk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plush_honk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skullix/fullyoperational/procedures/PlushHonkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VermetraPlush",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vermetra_plush",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fully_operational/blockstates/vermetra_plush.json",
+          "src/main/java/net/skullix/fullyoperational/block/model/VermetraPlushDisplayModel.java",
+          "src/main/java/net/skullix/fullyoperational/block/renderer/VermetraPlushDisplayItemRenderer.java",
+          "src/main/java/net/skullix/fullyoperational/block/display/VermetraPlushDisplayItem.java",
+          "src/main/resources/assets/fully_operational/models/item/vermetra_plush.json",
+          "src/main/java/net/skullix/fullyoperational/block/renderer/VermetraPlushTileRenderer.java",
+          "src/main/resources/assets/fully_operational/models/custom/vermetra_plush_particle.json",
+          "src/main/java/net/skullix/fullyoperational/block/model/VermetraPlushBlockModel.java",
+          "src/main/java/net/skullix/fullyoperational/block/VermetraPlushBlock.java",
+          "src/main/java/net/skullix/fullyoperational/block/entity/VermetraPlushTileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "FOBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fo_blocks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ZyphronPlush",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zyphron_plush",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skullix/fullyoperational/block/renderer/ZyphronPlushDisplayItemRenderer.java",
+          "src/main/java/net/skullix/fullyoperational/block/renderer/ZyphronPlushTileRenderer.java",
+          "src/main/java/net/skullix/fullyoperational/block/ZyphronPlushBlock.java",
+          "src/main/java/net/skullix/fullyoperational/block/display/ZyphronPlushDisplayItem.java",
+          "src/main/resources/assets/fully_operational/models/item/zyphron_plush.json",
+          "src/main/java/net/skullix/fullyoperational/block/model/ZyphronPlushBlockModel.java",
+          "src/main/resources/assets/fully_operational/blockstates/zyphron_plush.json",
+          "src/main/java/net/skullix/fullyoperational/block/model/ZyphronPlushDisplayModel.java",
+          "src/main/resources/assets/fully_operational/models/custom/zyphron_plush_particle.json",
+          "src/main/java/net/skullix/fullyoperational/block/entity/ZyphronPlushTileEntity.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "fullyoperational.plushhonk",
+      "files": [
+        "jellys.plushhonk"
+      ],
+      "category": "block",
+      "subtitle": "Plush honks"
+    }
+  ],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "subtitles.fullyoperational": "Plush honks",
+      "item_group.fully_operational.fo_blocks": "FO: Plushies",
+      "block.fully_operational.zyphron_plush": "Vermetra Plush",
+      "block.fully_operational.vermetra_plush": "Vermetra Plush",
+      "subtitles.fullyoperational.plushhonk": "Plush honks"
+    }
   },
   "foldersRoot": {
     "name": "~",
