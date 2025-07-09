@@ -143,7 +143,7 @@ public class ZyphronPlushTileEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Vermetra Plush");
+		return Component.literal("Zyphron Plush");
 	}
 
 	@Override

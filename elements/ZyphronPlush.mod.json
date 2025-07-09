@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "itzzyphronplushie",
+    "texture": "livingzyphron",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Vermetra Plush",
+    "name": "Zyphron Plush",
     "specialInformation": {
       "fixedValue": []
     },

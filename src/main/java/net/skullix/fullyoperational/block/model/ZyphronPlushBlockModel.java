@@ -19,6 +19,6 @@ public class ZyphronPlushBlockModel extends GeoModel<ZyphronPlushTileEntity> {
 
 	@Override
 	public ResourceLocation getTextureResource(ZyphronPlushTileEntity animatable) {
-		return new ResourceLocation("fully_operational", "textures/block/itzzyphronplushie.png");
+		return new ResourceLocation("fully_operational", "textures/block/livingzyphron.png");
 	}
 }

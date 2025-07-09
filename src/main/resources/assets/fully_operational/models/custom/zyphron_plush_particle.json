@@ -2,6 +2,6 @@
 {
   "parent": "fully_operational:displaysettings/plushdisplay",
   "textures": {
-    "particle": "fully_operational:block/itzzyphronplushie"
+    "particle": "fully_operational:block/livingzyphron"
   }
 }
