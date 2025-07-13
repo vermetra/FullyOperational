@@ -16,8 +16,8 @@ import net.minecraft.core.registries.Registries;
 
 public class FullyOperationalModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FullyOperationalMod.MODID);
-	public static final RegistryObject<CreativeModeTab> FO_BLOCKS = REGISTRY.register("fo_blocks",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fully_operational.fo_blocks")).icon(() -> new ItemStack(FullyOperationalModBlocks.VERMETRA_PLUSH.get())).displayItems((parameters, tabData) -> {
+	public static final RegistryObject<CreativeModeTab> FO_PLUSHIES = REGISTRY.register("fo_plushies",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fully_operational.fo_plushies")).icon(() -> new ItemStack(FullyOperationalModBlocks.VERMETRA_PLUSH.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FullyOperationalModBlocks.VERMETRA_PLUSH.get().asItem());
 				tabData.accept(FullyOperationalModBlocks.ZYPHRON_PLUSH.get().asItem());
 			}).build());
