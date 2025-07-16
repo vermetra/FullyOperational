@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import net.skullix.fullyoperational.init.FullyOperationalModTabs;
 import net.skullix.fullyoperational.init.FullyOperationalModSounds;
 import net.skullix.fullyoperational.init.FullyOperationalModItems;
+import net.skullix.fullyoperational.init.FullyOperationalModEntities;
 import net.skullix.fullyoperational.init.FullyOperationalModBlocks;
 import net.skullix.fullyoperational.init.FullyOperationalModBlockEntities;
 
@@ -46,6 +47,7 @@ public class FullyOperationalMod {
 		FullyOperationalModBlocks.REGISTRY.register(bus);
 		FullyOperationalModBlockEntities.REGISTRY.register(bus);
 		FullyOperationalModItems.REGISTRY.register(bus);
+		FullyOperationalModEntities.REGISTRY.register(bus);
 
 		FullyOperationalModTabs.REGISTRY.register(bus);
 
