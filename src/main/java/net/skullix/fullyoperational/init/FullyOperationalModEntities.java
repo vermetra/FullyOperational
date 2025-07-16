@@ -28,12 +28,12 @@ public class FullyOperationalModEntities {
 			EntityType.Builder.<FreddyFazbearEntity>of(FreddyFazbearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FreddyFazbearEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<FreddyFazbearStatueEntity>> FREDDY_FAZBEAR_STATUE = register("freddy_fazbear_statue",
-			EntityType.Builder.<FreddyFazbearStatueEntity>of(FreddyFazbearStatueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FreddyFazbearStatueEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<FreddyFazbearNightEntity>> FREDDY_FAZBEAR_NIGHT = register("freddy_fazbear_night",
 			EntityType.Builder.<FreddyFazbearNightEntity>of(FreddyFazbearNightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FreddyFazbearNightEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FreddyFazbearStatueEntity>> FREDDY_FAZBEAR_STATUE = register("freddy_fazbear_statue",
+			EntityType.Builder.<FreddyFazbearStatueEntity>of(FreddyFazbearStatueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FreddyFazbearStatueEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -47,15 +47,15 @@ public class FullyOperationalModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			FreddyFazbearEntity.init();
-			FreddyFazbearStatueEntity.init();
 			FreddyFazbearNightEntity.init();
+			FreddyFazbearStatueEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(FREDDY_FAZBEAR.get(), FreddyFazbearEntity.createAttributes().build());
-		event.put(FREDDY_FAZBEAR_STATUE.get(), FreddyFazbearStatueEntity.createAttributes().build());
 		event.put(FREDDY_FAZBEAR_NIGHT.get(), FreddyFazbearNightEntity.createAttributes().build());
+		event.put(FREDDY_FAZBEAR_STATUE.get(), FreddyFazbearStatueEntity.createAttributes().build());
 	}
 }

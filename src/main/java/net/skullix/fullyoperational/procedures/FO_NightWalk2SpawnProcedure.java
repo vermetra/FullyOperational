@@ -1,14 +1,6 @@
 package net.skullix.fullyoperational.procedures;
 
-import net.skullix.fullyoperational.init.FullyOperationalModEntities;
-import net.skullix.fullyoperational.entity.FreddyFazbearNightEntity;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
+import net.minecraftforge.eventbus.api.Event;
 
 public class FO_NightWalk2SpawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

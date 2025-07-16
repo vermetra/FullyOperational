@@ -1,10 +1,6 @@
 package net.skullix.fullyoperational.entity.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.skullix.fullyoperational.entity.FreddyFazbearNightEntity;
-
-import net.minecraft.resources.ResourceLocation;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class FreddyFazbearNightModel extends GeoModel<FreddyFazbearNightEntity> {
 	@Override

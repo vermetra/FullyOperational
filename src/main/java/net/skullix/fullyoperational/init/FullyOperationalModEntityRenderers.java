@@ -18,7 +18,7 @@ public class FullyOperationalModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(FullyOperationalModEntities.FREDDY_FAZBEAR.get(), FreddyFazbearRenderer::new);
-		event.registerEntityRenderer(FullyOperationalModEntities.FREDDY_FAZBEAR_STATUE.get(), FreddyFazbearStatueRenderer::new);
 		event.registerEntityRenderer(FullyOperationalModEntities.FREDDY_FAZBEAR_NIGHT.get(), FreddyFazbearNightRenderer::new);
+		event.registerEntityRenderer(FullyOperationalModEntities.FREDDY_FAZBEAR_STATUE.get(), FreddyFazbearStatueRenderer::new);
 	}
 }

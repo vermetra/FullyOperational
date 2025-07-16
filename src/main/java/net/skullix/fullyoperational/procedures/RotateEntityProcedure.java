@@ -1,7 +1,6 @@
 package net.skullix.fullyoperational.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
 public class RotateEntityProcedure {
 	public static void execute(Entity entity, Entity sourceentity) {

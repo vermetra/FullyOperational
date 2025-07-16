@@ -1,14 +1,6 @@
 {
-  "item.fully_operational.freddy_fazbear_night_spawn_egg": "Freddy Fazbear Spawn Egg",
-  "entity.fully_operational.freddy_fazbear_night": "Freddy Fazbear",
-  "item.fully_operational.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
-  "block.fully_operational.zyphron_plush": "Zyphron Plush",
-  "entity.fully_operational.freddy_fazbear": "Freddy Fazbear",
-  "block.fully_operational.vermetra_plush": "Vermetra Plush",
-  "subtitles.fullyoperational.plushhonk": "Plush honks",
-  "entity.fully_operational.freddy_fazbear_statue": "Freddy Fazbear - Statue",
-  "item_group.fully_operational.fo_entitys": "FO: Animatronics \u0026 Statues",
-  "item.fully_operational.freddy_fazbear_statue_spawn_egg": "Freddy Fazbear - Statue Spawn Egg",
   "subtitles.fullyoperational": "Plush honks",
-  "item_group.fully_operational.fo_blocks": "FO: Plushies"
+  "block.fully_operational.zyphron_plush": "Zyphron Plush",
+  "block.fully_operational.vermetra_plush": "Vermetra Plush",
+  "subtitles.fullyoperational.plushhonk": "Plush honks"
 }

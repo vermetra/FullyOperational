@@ -52,16 +52,6 @@
       }
     },
     {
-      "name": "FOBlocks",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fo_blocks",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "ZyphronPlush",
       "type": "animatedblock",
       "compiles": true,
@@ -79,6 +69,38 @@
           "src/main/java/net/skullix/fullyoperational/block/model/ZyphronPlushDisplayModel.java",
           "src/main/resources/assets/fully_operational/models/custom/zyphron_plush_particle.json",
           "src/main/java/net/skullix/fullyoperational/block/entity/ZyphronPlushTileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "FreddyFazbear",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freddy_fazbear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fully_operational/models/item/freddy_fazbear_spawn_egg.json",
+          "src/main/resources/data/fully_operational/forge/biome_modifier/freddy_fazbear_biome_modifier.json",
+          "src/main/java/net/skullix/fullyoperational/entity/FreddyFazbearEntity.java",
+          "src/main/java/net/skullix/fullyoperational/entity/model/FreddyFazbearModel.java",
+          "src/main/java/net/skullix/fullyoperational/client/renderer/FreddyFazbearRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "FreddyFazbearNight",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freddy_fazbear_night",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skullix/fullyoperational/client/renderer/FreddyFazbearNightRenderer.java",
+          "src/main/java/net/skullix/fullyoperational/entity/model/FreddyFazbearNightModel.java",
+          "src/main/java/net/skullix/fullyoperational/entity/FreddyFazbearNightEntity.java",
+          "src/main/resources/assets/fully_operational/models/item/freddy_fazbear_night_spawn_egg.json",
+          "src/main/resources/data/fully_operational/forge/biome_modifier/freddy_fazbear_night_biome_modifier.json"
         ]
       }
     },
@@ -105,40 +127,6 @@
       }
     },
     {
-      "name": "FO_OnSpawn",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fo_on_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/skullix/fullyoperational/procedures/FO_OnSpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "FreddyFazbear",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "freddy_fazbear",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/fully_operational/models/item/freddy_fazbear_spawn_egg.json",
-          "src/main/resources/data/fully_operational/forge/biome_modifier/freddy_fazbear_biome_modifier.json",
-          "src/main/java/net/skullix/fullyoperational/entity/FreddyFazbearEntity.java",
-          "src/main/java/net/skullix/fullyoperational/entity/model/FreddyFazbearModel.java",
-          "src/main/java/net/skullix/fullyoperational/client/renderer/FreddyFazbearRenderer.java"
-        ]
-      }
-    },
-    {
       "name": "FreddyFazbearStatue",
       "type": "animatedentity",
       "compiles": true,
@@ -151,50 +139,6 @@
           "src/main/resources/assets/fully_operational/models/item/freddy_fazbear_statue_spawn_egg.json",
           "src/main/java/net/skullix/fullyoperational/client/renderer/FreddyFazbearStatueRenderer.java",
           "src/main/java/net/skullix/fullyoperational/entity/FreddyFazbearStatueEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "FOEntitys",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fo_entitys",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "FreddyFazbearNight",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "freddy_fazbear_night",
-      "metadata": {
-        "files": [
-          "src/main/java/net/skullix/fullyoperational/client/renderer/FreddyFazbearNightRenderer.java",
-          "src/main/java/net/skullix/fullyoperational/entity/model/FreddyFazbearNightModel.java",
-          "src/main/java/net/skullix/fullyoperational/entity/FreddyFazbearNightEntity.java",
-          "src/main/resources/assets/fully_operational/models/item/freddy_fazbear_night_spawn_egg.json",
-          "src/main/resources/data/fully_operational/forge/biome_modifier/freddy_fazbear_night_biome_modifier.json"
-        ]
-      }
-    },
-    {
-      "name": "FO_NightOnSpawn",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fo_night_on_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/skullix/fullyoperational/procedures/FO_NightOnSpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       }
     },
@@ -219,6 +163,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "FO_OnSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fo_on_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skullix/fullyoperational/procedures/FO_OnSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FO_NightOnSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fo_night_on_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skullix/fullyoperational/procedures/FO_NightOnSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FOEntitys",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fo_entitys",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "FOPlushies",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fo_plushies",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -233,30 +233,13 @@
     }
   ],
   "tag_elements": {},
-  "tab_element_order": {
-    "CUSTOM:FOEntitys": [
-      "FreddyFazbear",
-      "FreddyFazbearStatue"
-    ],
-    "CUSTOM:FOBlocks": [
-      "VermetraPlush",
-      "ZyphronPlush"
-    ]
-  },
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.fully_operational.freddy_fazbear_night_spawn_egg": "Freddy Fazbear Spawn Egg",
-      "entity.fully_operational.freddy_fazbear_night": "Freddy Fazbear",
-      "item.fully_operational.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fully_operational.zyphron_plush": "Zyphron Plush",
-      "entity.fully_operational.freddy_fazbear": "Freddy Fazbear",
       "block.fully_operational.vermetra_plush": "Vermetra Plush",
       "subtitles.fullyoperational.plushhonk": "Plush honks",
-      "entity.fully_operational.freddy_fazbear_statue": "Freddy Fazbear - Statue",
-      "item_group.fully_operational.fo_entitys": "FO: Animatronics \u0026 Statues",
-      "item.fully_operational.freddy_fazbear_statue_spawn_egg": "Freddy Fazbear - Statue Spawn Egg",
-      "subtitles.fullyoperational": "Plush honks",
-      "item_group.fully_operational.fo_blocks": "FO: Plushies"
+      "subtitles.fullyoperational": "Plush honks"
     }
   },
   "foldersRoot": {
